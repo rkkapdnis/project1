@@ -16,6 +16,6 @@
 
     - name: COPY WAR FILE
       copy:
-        src: /path/to/webapp.war
+        src: /opt/docker/webapp.war
         dest: /opt/docker
-        remote_src: yes
+        
