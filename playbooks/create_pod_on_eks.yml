@@ -23,7 +23,7 @@
         var: copy.stdout_lines              
         
     - name: DEPLOYMENT ON K8 CLUSTER
-      shell: kubectl apply -f /opt/playbooks/dep_svc.yml
+      shell: kubectl apply -f /opt/playbooks/dep_svc.yml --validate=false
       register: deployment
 
     - name: DEPLOYMENT STATUS      
